@@ -12,7 +12,8 @@ const Orders = (sequelize, type) => {
             type: type.DECIMAL(10,2)
         },
         isActive:{
-            type: type.BOOLEAN(true)
+            type: type.BOOLEAN(),
+            defaultValue: 1
         }
     })
 }
